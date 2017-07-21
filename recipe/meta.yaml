@@ -1,6 +1,6 @@
 {% set name = "pywinpty" %}
-{% set version = "v0.1.2" %}
-{% set hash = "73ab46e6aa01e3aa4b0d307c3290fbd42271ba79ce01998a870a789848e1b716" %}
+{% set version = "0.1.3" %}
+{% set hash = "b2b7a70c61df58814510196ceb154ae27dc18c991c670aea0959757a55985a95" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://github.com/spyder-ide/{{ name }}/archive/{{ version }}.tar.gz
+  url: https://github.com/spyder-ide/{{ name }}/archive/v{{ version }}.tar.gz
   sha256: {{ hash }}
 
 build:
