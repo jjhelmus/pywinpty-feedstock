@@ -1,6 +1,6 @@
 {% set name = "pywinpty" %}
-{% set version = "0.2.0" %}
-{% set hash = "52e86e9218eb736c0282d982fdf054b5e45660c9596568a18aa4f0c5a467fbbb" %}
+{% set version = "0.2.1" %}
+{% set hash = "0e828c2ad1d91cafae24d5def3c5c10c151942a4927b0ce56ce04dc92a8122de" %}
 
 package:
   name: {{ name }}
