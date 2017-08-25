@@ -1,6 +1,6 @@
 {% set name = "pywinpty" %}
-{% set version = "0.1.4" %}
-{% set hash = "881652b02d67d05e159ef73a894be851a0e2c82cb7469571bc678665d938ff72" %}
+{% set version = "0.2.1" %}
+{% set hash = "0e828c2ad1d91cafae24d5def3c5c10c151942a4927b0ce56ce04dc92a8122de" %}
 
 package:
   name: {{ name }}
@@ -20,12 +20,10 @@ requirements:
   build:
     - cython
     - python
-    - pywin32
     - setuptools
     - winpty
   run:
     - python
-    - pywin32
     - winpty
 
 test:
