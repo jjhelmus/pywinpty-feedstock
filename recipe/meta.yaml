@@ -1,6 +1,6 @@
 {% set name = "pywinpty" %}
-{% set version = "0.4.1" %}
-{% set hash = "0f6d1a00be36ee0f7c7a76fa9de0b7f3d39bf6963cd8d49c673f6105b0fbbe30" %}
+{% set version = "0.5" %}
+{% set hash = "013e58a93079fb7bc72ba14dd6c86b473ea09797d94629eea1fe3c738f086ad2" %}
 
 package:
   name: {{ name }}
@@ -13,8 +13,7 @@ source:
 
 build:
   number: 0
-  skip: True  # [not (win and py3k)]
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  skip: True  # [not win]
 
 requirements:
   build:
@@ -22,9 +21,14 @@ requirements:
     - python
     - setuptools
     - winpty
+    - backports.shutil_which  # [py2k]
+    - vc 14
   run:
+    - backports.shutil_which  # [py2k]
+    - setuptools  # [py2k]
     - python
     - winpty
+    - vs2015_runtime
 
 test:
   imports:
@@ -43,6 +47,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - blink1073
     - ccordoba12
     - andfoy
     - goanpeca
