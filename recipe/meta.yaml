@@ -22,16 +22,15 @@ requirements:
     - setuptools
     - winpty
     - backports.shutil_which  # [py2k]
-    # use the m2w64 toolchain for Python 2.7 as VS 2008 is not supported
-    - m2w64-toolchain         # [py2k]
-    - libpython               # [py2k]
+    # use the m2w64 toolchain for all builds
+    - m2w64-toolchain
+    - libpython
   run:
     - backports.shutil_which  # [py2k]
     - setuptools  # [py2k]
     - python
     - winpty
-    # the gcc libraries are only needed on win-32
-    - m2w64-gcc-libs          # [py2k and win32]
+    - m2w64-gcc-libs
 
 test:
   imports:
