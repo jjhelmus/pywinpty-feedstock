@@ -12,7 +12,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 1
+  number: 2
   skip: True  # [not win]
 
 requirements:
@@ -22,11 +22,15 @@ requirements:
     - setuptools
     - winpty
     - backports.shutil_which  # [py2k]
+    # use the m2w64 toolchain for all builds
+    - m2w64-toolchain
+    - libpython
   run:
     - backports.shutil_which  # [py2k]
     - setuptools  # [py2k]
     - python
     - winpty
+    - m2w64-gcc-libs
 
 test:
   imports:
