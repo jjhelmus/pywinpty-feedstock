@@ -12,7 +12,7 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not win]
 
 requirements:
@@ -20,7 +20,8 @@ requirements:
     - cython
     - python
     - setuptools
-    - winpty
+    # Pin to a working mingw build of winpty
+    - winpty  0.4.3=4
     - backports.shutil_which  # [py2k]
     # use the m2w64 toolchain for all builds
     - m2w64-toolchain
@@ -34,7 +35,8 @@ requirements:
 
 test:
   imports:
-    - winpty
+    # It hangs in Python 2
+    - winpty  # [not py2k]
 
 about:
   home: https://github.com/spyder-ide/pywinpty
