@@ -17,14 +17,16 @@ It allows to create and communicate with Windows processes that print outputs
 Current build status
 ====================
 
-Linux: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-OSX: ![](https://cdn.rawgit.com/conda-forge/conda-smithy/90845bba35bec53edac7a16638aa4d77217a3713/conda_smithy/static/disabled.svg)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/pywinpty-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/pywinpty-feedstock/branch/master)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/pywinpty-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/pywinpty-feedstock/branch/master)
+![Linux disabled](https://img.shields.io/badge/linux-disabled-lightgrey.svg)
+![OSX disabled](https://img.shields.io/badge/OSX-disabled-lightgrey.svg)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pywinpty/badges/version.svg)](https://anaconda.org/conda-forge/pywinpty)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/pywinpty/badges/downloads.svg)](https://anaconda.org/conda-forge/pywinpty)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-pywinpty-green.svg)](https://anaconda.org/conda-forge/pywinpty) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/pywinpty.svg)](https://anaconda.org/conda-forge/pywinpty) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/pywinpty.svg)](https://anaconda.org/conda-forge/pywinpty) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/pywinpty.svg)](https://anaconda.org/conda-forge/pywinpty) |
 
 Installing pywinpty
 ===================
