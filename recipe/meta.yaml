@@ -26,7 +26,6 @@ requirements:
     - libpython
   run:
     - backports.shutil_which  # [py2k]
-    - setuptools  # [py2k]
     - python
     - winpty
     - m2w64-gcc-libs
