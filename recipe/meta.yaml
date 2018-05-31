@@ -32,7 +32,8 @@ requirements:
 
 test:
   imports:
-    - winpty
+    # It hangs in Python 2
+    - winpty  # [not py2k]
 
 about:
   home: https://github.com/spyder-ide/pywinpty
