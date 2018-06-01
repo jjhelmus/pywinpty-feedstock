@@ -11,11 +11,11 @@ source:
   sha256: {{ hash }}
 
 build:
-  number: 0
+  number: 1
   skip: True  # [not win]
 
 requirements:
-  build:
+  host:
     - cython
     - python
     - setuptools
@@ -26,7 +26,6 @@ requirements:
     - libpython
   run:
     - backports.shutil_which  # [py2k]
-    - setuptools  # [py2k]
     - python
     - winpty
     - m2w64-gcc-libs
