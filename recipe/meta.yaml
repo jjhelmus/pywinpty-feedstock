@@ -1,24 +1,22 @@
-{% set name = "pywinpty" %}
 {% set version = "0.5.4" %}
-{% set hash = "4ee8193b19d77ab59097a000a2c52b36e768e92263812e0c0b40306be8927fb4" %}
 
 package:
-  name: {{ name }}
+  name: pywinpty
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ hash }}
+  url: https://pypi.io/packages/source/p/pywinpty/pywinpty-{{ version }}.tar.gz
+  sha256: 4ee8193b19d77ab59097a000a2c52b36e768e92263812e0c0b40306be8927fb4
 
 build:
-  number: 1
+  number: 2
   skip: True  # [not win]
 
 requirements:
   host:
     - cython
     - python
-    - setuptools
+    - pip
     - winpty
     - backports.shutil_which  # [py2k]
     # use the m2w64 toolchain for all builds
@@ -53,3 +51,4 @@ extra:
     - andfoy
     - goanpeca
     - jjhelmus
+    - ocefpaf
