@@ -36,6 +36,7 @@ test:
 about:
   home: https://github.com/spyder-ide/pywinpty
   license: MIT
+  license_file: LICENSE.txt
   summary: 'Python bindings for the winpty library'
   description: |
     Python bindings for the winpty pseudo terminal library.
