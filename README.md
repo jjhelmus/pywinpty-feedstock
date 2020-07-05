@@ -180,7 +180,6 @@ Feedstock Maintainers
 * [@andfoy](https://github.com/andfoy/)
 * [@blink1073](https://github.com/blink1073/)
 * [@ccordoba12](https://github.com/ccordoba12/)
-* [@goanpeca](https://github.com/goanpeca/)
 * [@jjhelmus](https://github.com/jjhelmus/)
 * [@ocefpaf](https://github.com/ocefpaf/)
 
